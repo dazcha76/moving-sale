@@ -1,0 +1,13 @@
+<h2>Foreign Languages</h2>
+<div class="button-container">
+    <button type="button" class="btn btn-primary filter" (click)="selectLanguage('All')">All</button>
+    <button type="button" class="btn btn-primary filter" (click)="selectLanguage('Chinese')">Chinese</button>
+    <button type="button" class="btn btn-primary filter" (click)="selectLanguage('German')">German</button>
+    <button type="button" class="btn btn-primary filter" (click)="selectLanguage('Italian')">Italian</button>
+    <button type="button" class="btn btn-primary filter" (click)="selectLanguage('Russian')">Russian</button>
+    <button type="button" class="btn btn-primary filter" (click)="selectLanguage('Spanish')">Spanish</button>
+</div>
+<div class="product-container">
+    <app-product *ngFor="let item of items" [item]="item" [category]="category"></app-product>
+</div>  
+

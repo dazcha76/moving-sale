@@ -1,0 +1,8 @@
+<div *ngIf="item.category === category || category === 'All'" class="card" style="width: 18rem;">
+    <img src="../assets/{{ item.image }}.png" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{ item.title }}</h5>
+        <p *ngIf="item.price" class="card-text">{{ item.price }}</p>
+        <button class="btn btn-primary" (click)="openModal()">Details</button>
+    </div>
+</div>

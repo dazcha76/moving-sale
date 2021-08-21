@@ -1,0 +1,10 @@
+<h2>Educational Games & Supplies</h2>
+<div class="button-container">
+    <button type="button" class="btn btn-primary filter" (click)="selectCategory('All')">All</button>
+    <button type="button" class="btn btn-primary filter" (click)="selectCategory('Language Arts')">Language Arts</button>
+    <button type="button" class="btn btn-primary filter" (click)="selectCategory('Math')">Math</button>
+    <button type="button" class="btn btn-primary filter" (click)="selectCategory('STEM')">STEM</button>
+</div>
+<div class="product-container">
+    <app-product *ngFor="let item of items" [item]="item" [category]="category"></app-product>
+</div>  
